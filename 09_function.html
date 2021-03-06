@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Intro</title>
+</head>
+
+<script>
+//Boolean, Number, String, Array, Object 5가지타입
+
+//Fuction1
+var add = new Function("x,y", "return x+y") ;
+document.write("add: " +add(4,3)+"<br/>") ; //add(4, 3, "ddd", 1, 2) -> no error 
+
+//Fuction2(제일많이 사용)
+var minus = function(x,y) {
+                return x-y;
+            } ;
+document.write("minus: " + minus(4,3)+"<br/>") ;
+
+var minusx = (x,y) => {
+                return x-y;
+            } ;
+document.write("minusx: " + minusx(4,3)+"<br/>") ;
+
+//Fuction3
+function multi(x,y) {
+    return x*y;
+}
+document.write("multi: " + multi(4,3)+"<br/><br/>") ;
+
+//Fuction4
+function divide(x,y) {
+    document.write(arguments.length+"<br/>") ;
+    document.write(arguments[2]+"<br/>") ;
+    return x/y;
+}
+document.write("divide: " + divide(100,10, "hello", 2, 4, 8)+"<br/>") ;
+
+
+
+</script>
+
+<body>
+    <h1>https://developer.mozilla.org</h1>
+    <h1>여러분을 환영합니다!!</h1>
+</body>
+</html>

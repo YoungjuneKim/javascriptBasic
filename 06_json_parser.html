@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Intro</title>
+</head>
+
+<script>
+    //Boolean, Number, String, Array, Object 5가지타입
+
+    var data =
+    [
+        {id:1, title:"test"},
+        {id:2, title:"test2"},
+        {id:3, title:"test3"}
+    ]  ;
+    console.log("data : ", data) 
+   
+    var data2 = JSON.parse('{"id":1, "title":"test"}'); // {id:1, title:"test"} JSON.parse Error
+    console.log("data2 : ", data2) 
+
+    var data3 = {id:2, title:"test2"};
+    console.log("data3 : ", data3) 
+
+    var json = JSON.stringify(data3);
+    console.log("json : ", json) 
+ 
+
+</script>
+
+<body>
+    <h1>여러분을 환영합니다!!</h1>
+</body>
+</html>
