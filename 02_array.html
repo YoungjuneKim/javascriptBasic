@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Intro</title>
+</head>
+
+<script>
+    ////Boolean, Number, String, Array, Object 5가지타입
+
+    //array
+    var nums = new Array() ;
+    nums.push(5) ;        
+    nums.push(15) ;        
+    console.log(nums) ;
+    nums.push(115) ;        
+    console.log(nums) ;
+
+    var n1 = nums.pop() ;
+    console.log("n1:"+n1) ;
+    console.log("nums", nums) ;  //last in first out(Stack)
+
+    var nums2 = new Array() ;
+    nums2[0] =3 ;
+    nums2[1] =13 ;
+    nums2[2] =113 ;
+    console.log(nums2[1]) ;
+    console.log("nums2", nums2) ;
+ 
+    var nums3 = new Array() ;
+    nums3[5] = 11119
+    console.log("nums3", nums3) ;
+    console.log("nums3.length", nums3.length) ;
+
+    // array 
+    var str1  = new Array() ;
+    var str2  = new Array(5) ; 
+    var str3  = new Array(5,10,21) ; //array 초기화
+    var str4  = new Array(5,10,21, "hello") ; //array 초기화
+    console.log("typeof :", typeof str4[4-1] ) ;
+
+    var str5  = new Array(5,10,21, "hello", new Array(2,3,4)) ;
+    console.log("str5_1: ", str5) ;
+    console.log("str5[4][1]: ", str5[4][1]) ;
+    //str5.splice(1) ;     //1번째이후 다 삭제
+    str5.splice(1,1) ;  //1번째 이후 1개만 삭제
+    //str5.splice(1,2) ;  //1번째 이후 2개만 삭제
+    console.log("str5_2: ", str5) ;
+
+    str5.splice(2,1, "hi!") ;  //2번째 이후 1개만 삭제하고 "hi!"을 삽입
+    console.log("str5_3: ", str5) ;
+    str5.splice(2,0, "hihi!") ;  //2번째 이후  "hihi!"을 삽입
+    console.log("str5_4: ", str5) ;
+
+</script>
+
+<body>
+    <h1>여러분을 환영합니다!!</h1>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Intro</title>
+</head>
+
+<script>
+    eval('var x = 30') ;
+    console.log("eval", x)
+
+    var data =
+    [
+        {"id":1, "title":"test"},
+        {"id":2, "title":"test2"},
+        {"id":3, "title":"test3"}
+    ]  ;
+    console.log(data) 
+
+    var strData =
+    '[ \
+        {"id":1, "title":"test"}, \
+        {"id":2, "title":"test2"}, \
+        {"id":3, "title":"test3"} \
+    ]'  ;
+    console.log(strData) 
+
+    eval("var data2 = " + strData + ";") ;
+    console.log(data2) 
+    console.log(data2[0]) 
+    console.log(data2[0].title) 
+
+</script>
+
+<body>
+    <h1>여러분을 환영합니다!!</h1>
+</body>
+</html>

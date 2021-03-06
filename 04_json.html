@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Intro</title>
+</head>
+
+<script>
+    //Boolean, Number, String, Array, Object 5가지타입
+    var b = new Boolean(true); // var b = true ;
+    var n = new Number(3);  //var n = 3 ;
+    var s = new String("heoll javascript world"); //var s ="helloo" or var = 'hello' ;
+    var arr = new Array();  //var arr =[] ;
+    var obj = new Object(); //var obj ={} ;
+
+    var arr1  = new Array() ;
+    console.log(arr1) ;
+    var arr2  = new Array(5) ; 
+    console.log(arr2) ;
+    var arr3  = new Array(5,2) ; 
+    console.log(arr3) ;
+    var arr4  = new Array(5,10,21) ; //array 초기화
+    console.log(arr4) ;
+
+    /**
+    var exam = new Object() ;
+    exam.kor = 30 ;  // exam.["kor"] = 30 
+    exam.eng = 50 ;
+    exam.math = 70 ;
+    console.log(exam)
+    **/
+
+    var exam = {"kor":30, "eng":50,"math":70} ;
+    console.log(exam)
+
+    var arr5 = [3,4,5,6,exam,[7,8,9]] ;
+    console.log(arr5)
+    console.log(arr5[5][1])
+    console.log(arr5[4].math)
+
+    /** json data
+    [
+        {"id":1, "title":"test"},
+        {"id":2, "title":"test2"},
+        {"id":3, "title":"test3"}
+    ]    
+    **/
+
+
+</script>
+
+<body>
+    <h1>여러분을 환영합니다!!</h1>
+</body>
+</html>
