@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Intro</title>
+</head>
+
+<script>
+//Boolean, Number, String, Array, Object 5가지타입
+/**
+window
+    window.location
+    window.history
+    window.screen
+    window.navigarot
+    window.document
+        window.document.body
+        window.document.img
+        window.document.form
+            window.document.form.input
+
+**/
+
+var x =3 ;
+var y =4 ;
+window.alert(x+y) ; //window 생략가능
+
+var a,b;
+a = window.prompt("input a ", 0) ; //0 default value
+b = prompt("input b ", 0) ;
+console.log(a+b) ;  //Stirng
+console.log(parseInt(a)+parseInt(b)) ;
+
+var c = parseInt("abc") ; // Returns NaN
+console.log("c : ", c) ;
+var d = parseInt("12abc") ; // Returns 12
+console.log("d : ", d) ;
+
+var answer = confirm("정말로 삭제하겠습니까?") ;
+if(answer) {
+  alert("삭제됨") ;  
+}
+
+</script>
+
+<body>
+    <h1>https://developer.mozilla.org</h1>
+    <h1>여러분을 환영합니다!!</h1>
+</body>
+</html>

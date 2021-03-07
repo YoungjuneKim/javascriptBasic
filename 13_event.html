@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Intro</title>
+</head>
+
+<script>
+//Boolean, Number, String, Array, Object 5가지타입
+/**
+window
+    window.location
+    window.history
+    window.screen
+    window.navigarot
+    window.document
+        window.document.body
+        window.document.img
+        window.document.form
+            window.document.form.input
+
+**/
+
+//Fuction1
+var add = new Function("x,y", "return x+y") ;
+
+//Fuction2(제일많이 사용)
+var minus = function(x,y) {
+                return x-y;
+            } ;
+
+var minusx = (x,y) => {
+                return x-y;
+            } ;
+
+//Fuction3
+function multi(x,y) {
+    return x*y;
+}
+
+//Fuction4
+function divide(x,y) {
+    //return x/y;
+    document.write("divide: " + x/y) ;
+}
+
+</script>
+
+<body>
+    <h1>https://developer.mozilla.org</h1>
+    <h1>여러분을 환영합니다!!</h1><br><br>
+    
+    <form>
+	<p>
+        <input type="button" value="test1" onclick="alert('test onclick');"/>
+        <input type="button" value="test2" onmouseover="alert('test2 mouseover');"/>
+        <span onclick="alert('span onclick')">스팬입니다.</span>
+	</p>
+	<p>
+        <input type="button" value="divide" onclick="divide(100,10);"/>
+        <input type="button" value="multi" onclick="multi(3,4);"/>
+	</p>
+	<p>
+		<strong>아이디</strong>
+		<input type="text" name="name" value="아이디 입력">
+	</p>
+	<p>
+		<strong>비밀번호</strong>
+		<input type="password" name="password" value="비밀번호 입력">
+	</p>
+	<p>
+		<strong>성별</strong>
+		<input type="radio" name="gender" value="M">남자
+		<input type="radio" name="gender" value="F">여자
+	</p>
+	<p>
+		<strong>응시분야</strong>
+		<input type="checkbox" name="part" value="eng">영어
+		<input type="checkbox" name="part" value="math">수학
+	</p>
+	<p>
+		<input type="submit" value="제출">
+	</p>
+</form>
+</body>
+</html>

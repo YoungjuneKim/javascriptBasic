@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Intro</title>
+</head>
+
+<script>
+//Boolean, Number, String, Array, Object 5가지타입
+
+function f0() {
+    var x = 1 ; //지역변수 x는 return할때 소멸
+    return x ; 
+}
+
+var q = f0() ;
+console.log("q: ", q) ;
+console.log("------------------") ;
+
+
+function f1() {
+    var a = 1 ; //지역변수 a는 밑에 함수가 참조할때까지 소멸하지(closure) 못함
+
+    return function f2() {
+        return a ;
+    }
+}
+
+var fx = f1() ;
+var x = fx() ;
+console.log("x: ", x) ;
+
+</script>
+
+<body>
+    <h1>https://developer.mozilla.org</h1>
+    <h1>여러분을 환영합니다!!</h1>
+</body>
+</html>

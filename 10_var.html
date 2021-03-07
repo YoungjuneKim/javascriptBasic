@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Intro</title>
+</head>
+
+<script>
+//Boolean, Number, String, Array, Object 5가지타입
+
+console.log(a) ; //undefined
+var a = 1 ;
+console.log(a) ;
+
+//console.log(b) ; //error
+b = 2 ;          //전역객체 -> window.b =2 
+console.log("b:", b) ;
+console.log("window.b : ", window.b) ;
+
+var f1 = function() {
+                c = 1 ; //window.c =1 
+                var c = 3; //이게 없으면 위에 c에 연산
+                c++ ;
+                console.log("f1 c : ", c) ;
+                console.log("f1 window.c : ", window.c) ; //undefined 
+            } ;
+
+f1() ;
+console.log("window.c : ", window.c) ; //undefined 
+
+var d = 1 ;
+var d = 2 ;
+console.log("d:", d) ;
+
+function f2() {
+    var f = 10 ;    
+    g = 11 ; 
+}
+
+f2() ;
+
+//console.log("f:", f) ; //error
+console.log("g:", g) ;
+console.log("window.g:", window.g) ;
+
+</script>
+
+<body>
+    <h1>https://developer.mozilla.org</h1>
+    <h1>여러분을 환영합니다!!</h1>
+</body>
+</html>
