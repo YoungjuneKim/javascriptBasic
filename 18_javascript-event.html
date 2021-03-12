@@ -12,6 +12,160 @@
     <h1>https://www.w3.org/TR/</h1>
     <h1>여러분을 환영합니다!!</h1><br><br>
 
+    <section id="section10">
+        <h1>Ex10 : Draggable 설정</h1>
+        <style>
+            .container10{
+                width: 800px;
+                height: 400px;
+                border: 1px solid gray;
+                position: relative;
+                overflow: hidden;
+            }
+            .box10{
+                width: 100px;
+                height: 100px;
+                background: limegreen;
+                position: absolute;
+            }
+            .dropzone{
+                width: 200px;
+                height: 200px;
+                border: 1px solid gray
+            }
+            
+        </style>
+
+        <div class="container10">
+            <!--
+            <div class="box10"></div>
+            <div class="box10"></div>
+            -->
+            <div class="box10" dragable="true"></div>
+        </div>
+        <div class="dropzone"></div>
+    </section>
+    <hr /><br>
+    
+    <section id="section9">
+        <h1>Ex9 : 박스의 옵셋 좌표 이용하기</h1>
+        <style>
+            .container9{
+                width: 800px;
+                height: 400px;
+                border: 1px solid gray;
+                position: relative;
+                overflow: hidden;
+            }
+            .box9{
+                width: 100px;
+                height: 100px;
+                background: black;
+                position: absolute;
+            }  
+        </style>
+
+        <div class="container9">
+            <div class="box9"></div>
+            <div class="box9"></div>
+            <div class="box9"></div>
+        </div>
+        <div class="status"></div>
+    </section>
+    <hr /><br>
+
+    <section id="section8">
+        <h1>Ex8 : 여러 개의 박스 드래그하기</h1>
+        <style>
+            .container8{
+                width: 800px;
+                height: 400px;
+                border: 1px solid gray;
+            }
+            .box8{
+                width: 100px;
+                height: 100px;
+                background: green;
+                position: absolute;
+            }  
+        </style>
+
+        <div class="container8">
+            <div class="box8"></div>
+            <div class="box8"></div>
+            <div class="box8"></div>
+        </div>
+    </section>
+    <hr /><br>
+
+    <section id="section7">
+        <h1>Ex7 : 드래그 방식으로 박스 옮기기</h1>
+        <style>
+            .container7{
+                width: 800px;
+                height: 400px;
+                border: 1px solid gray;
+            }
+            .box7{
+                width: 100px;
+                height: 100px;
+                background: blue;
+                position: absolute;
+            }  
+        </style>
+
+        <div class="container7">
+            <div class="box7"></div>
+        </div>
+    </section>
+    <hr /><br>
+
+    <section id="section6">
+        <h1>Ex6 : 마우스 좌표 #1 - 클릭 위치에 박스 옮기기 </h1>
+        <style>
+            .container6{
+                width: 800px;
+                height: 400px;
+                border: 1px solid gray;
+            }
+            .box6{
+                width: 100px;
+                height: 100px;
+                background: yellow;
+            }  
+        </style>
+
+        <div class="container6">
+            <div class="box6"></div>
+        </div>
+    </section>
+    <hr /><br>
+
+    <section id="section5">
+        <h1>Ex5 : Trigger </h1>
+        <style>
+            .file-button{
+                display:none
+            }
+
+            .file-trigger-button{
+                background: green;
+                border: 1px solid lightgreen;
+                border-radius: 5px ;
+                padding: 5px 10px;
+                color: #fff;
+                cursor: pointer;
+            }
+            .file-trigger-button:hover{
+                background: limegreen;
+            }
+        </style>
+
+        <input type="file" class="file-button">
+        <span class="file-trigger-button"> 파일선택 </span>
+    </section>
+    <hr />
+
     <section id="section4">
         <h1>Ex4 : 서로다른기능의 여러버튼을 가진화면에서 이벤트처리하기</h1>
         <table border="1" class="notice-list">
@@ -33,9 +187,9 @@
                     <td>newlec</td>
                     <td>2</td>
                     <td>
-                        <input type="button" class="sel-button" value="선택" />
-                        <input type="button" class="edit-button" value="수정" />
-                        <input type="button" class="del-button" value="삭제" />
+                        <a href="" class="sel-button">  선택 </a>
+                        <a href="" class="edit-button"> 수정 </a>
+                        <a href="" class="del-button">  삭제 </a>
                     </td>
                 </tr>
                 <tr>
@@ -45,9 +199,9 @@
                     <td>newlec</td>
                     <td>0</td>
                     <td>
-                        <input type="button" class="sel-button" value="선택" />
-                        <input type="button" class="edit-button" value="수정" />
-                        <input type="button" class="del-button" value="삭제" />
+                        <a href="" class="sel-button">  선택 </a>
+                        <a href="" class="edit-button"> 수정 </a>
+                        <a href="" class="del-button">  삭제 </a>
                     </td>
                 </tr>
                 <tr>
@@ -57,9 +211,9 @@
                     <td>newlec</td>
                     <td>1</td>
                     <td>
-                        <input type="button" class="sel-button" value="선택" />
-                        <input type="button" class="edit-button" value="수정" />
-                        <input type="button" class="del-button" value="삭제" />
+                        <a href="" class="sel-button">  선택 </a>
+                        <a href="" class="edit-button"> 수정 </a>
+                        <a href="" class="del-button">  삭제 </a>
                     </td>
                 </tr>
                 <tr>
@@ -69,9 +223,14 @@
                     <td>newlec</td>
                     <td>0</td>
                     <td>
+                        <a href="" class="sel-button">  선택 </a>
+                        <a href="" class="edit-button"> 수정 </a>
+                        <a href="" class="del-button">  삭제 </a>
+                        <!--
                         <input type="button" class="sel-button" value="선택" />
                         <input type="button" class="edit-button" value="수정" />
                         <input type="button" class="del-button" value="삭제" />
+                        -->
                     </td>
                 </tr>
             </tbody>
